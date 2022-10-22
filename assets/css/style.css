@@ -92,17 +92,25 @@ img {
     width: 80%;
     background-color: hsl(158, 36%, 37%);;
     cursor: pointer;
+    transition: 0.3s linear;
+    margin-top: 10px;
 }
 
 .button p {
     color: white !important;
     opacity: 1;
     margin-top: 15px !important;
+    
 }
 
+.button:hover {
+    background-color: hsl(157, 34%, 20%);;
+
+}
 .structure {
     /* border: 1px solid; */
 }
+/* Media Queries */
 
 @media (max-width : 1201px) {
     .texts h1 {
@@ -144,6 +152,7 @@ img {
         width: 100% !important; 
         margin-left: -10px;   
         margin-bottom: 10px;    
+        margin-top: 0 !important;
     }
     .sale {
         margin-top: -6px;
