@@ -1,0 +1,180 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap');
+/* Global Values */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/* Parent Main Section */
+
+.parent {
+    height: 100vh;
+    background-color: #F2E9E4;
+}
+
+.parent .container {
+    border: 1px solid;
+    height: 100%;
+}
+
+.container .card {
+    /* width: 600px;
+    height: 400px; */
+}
+.parent .container .img img {
+    /* width: 270px; */
+    /* height: 100%; */
+    border-radius: 10px 0 0 10px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    color: #666875;
+    opacity: 0.7;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card p:nth-child(1) {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+    
+}
+
+.card h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+.one {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.two {
+    text-decoration: line-through;
+    font-weight: 600;
+    color: #666875;
+    opacity: 0.7;
+    font-size: 14px;
+
+}
+
+.button svg {
+    margin-top: -2px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.button { 
+    border-radius: 10px;
+    width: 80%;
+    background-color: hsl(158, 36%, 37%);;
+    cursor: pointer;
+}
+
+.button p {
+    color: white !important;
+    opacity: 1;
+    margin-top: 15px !important;
+}
+
+.structure {
+    /* border: 1px solid; */
+}
+
+@media (max-width : 1201px) {
+    .texts h1 {
+        font-size: 30px !important;
+    }
+    .card p {
+        font-size: 12px;
+    }
+}
+@media (max-width : 992px) {
+    .texts h1 {
+        font-size: 25px !important;
+    }
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width : 768px) {
+    .card .img img {
+        width: 100.5% !important;
+        height: 147px !important;
+        object-fit: cover;
+        object-position: center -112px;
+        border-radius: 10px 10px 0 0 !important;
+        margin-left: -1px;
+        margin-top: -7px;
+    }
+    .card h1 {
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 25px !important;
+    
+    }
+    .card p {
+        font-size: 10px;
+    }
+    .button {
+        width: 100% !important; 
+        margin-left: -10px;   
+        margin-bottom: 10px;    
+    }
+    .sale {
+        margin-top: -6px;
+        margin-bottom: 6px !important;
+    }
+    .one {
+        font-size: 20px;
+    }
+    .two {
+        font-size: 12px;
+    }
+}
+
+@media (max-width : 570px) {
+    .card h1 {
+        font-size: 22px !important;
+    
+    }
+    .card .img img {
+        object-position: center -57px;
+    }
+}
+@media (max-width : 455px) {
+    .card .img img {
+        margin-left: -1px;
+        margin-top: 0 !important;
+    }
+    .card h1 {
+        font-size: 18px !important;
+    }
+    .card p {
+        font-size: 9px !important;
+    }
+}
