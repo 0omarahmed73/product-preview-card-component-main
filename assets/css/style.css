@@ -9,7 +9,7 @@
 }
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 img {
@@ -21,11 +21,12 @@ img {
 body {
     height: 100vh;
     background-color: #F2E9E4;
-    position: relative;
 }
 
 
 .card {
+    /* margin-top: 19px; */
+    margin-inline: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,6 +131,12 @@ body {
     }
 }
 @media (max-width : 992px) {
+    /* body {
+        height: calc(100vh - 25px);
+    }
+    .card {
+        margin-top: 25px;
+    } */
     .texts h1 {
         font-size: 25px !important;
     }
@@ -146,26 +153,26 @@ body {
 
 @media (max-width : 768px) {
 
-    .card .img img {
-        width: 100.5% !important;
-    height: 189px !important;
-        object-fit: cover;
-        object-position: center -45px;
-        border-radius: 10px 10px 0 0 !important;
-        margin-left: -1px;
-        margin-top: -7px;
+    /* body {
+        height: calc(100vh - 50px);
     }
+    .card {
+        margin-top: 50px;
+    } */
+
+
+   
     .card h1 {
         font-family: 'Fraunces', serif;
         font-weight: 700;
-        /* font-size: 25px !important; */
+        font-size: 20px !important;
     
     }
     .card p {
-        /* font-size: 10px; */
+        font-size: 9px;
     }
     .button {
-        width: 100% !important; 
+        width: 80% !important; 
         margin-left: -10px;   
         margin-bottom: 20px;    
         margin-top: 0 !important;
@@ -183,23 +190,121 @@ body {
 }
 
 @media (max-width : 660px) {
+    /* body {
+        height: calc(100vh - 50px);
+    }
+    .card {
+        margin-top: 50px;
+    } */
+
+
     .card h1 {
         font-size: 22px !important;
     
     }
     .card .img img {
+        width: 215px !important;
         object-position: center 0px;
+    }
+    .button {
+        width: 90% !important;
+        /* margin: auto; */
+        margin-bottom: 0;
+        margin-left: 1px;
+    }
+@media (max-width : 575px) {
+    body {
+        height: calc(100vh - 3px);
+    }
+    .card {
+        margin-top: 3px;
+    }
+
+    .card p:first-of-type {
+        margin-top: -7px;
+
+    }
+
+    .card h1 {
+        font-size: 20px !important;
+        margin-top: -10px;
+    
+    }
+    .card .img img {
+        width: 100.5% !important;
+        height: 189px !important;
+            object-fit: cover;
+            object-position: center -45px;
+            border-radius: 10px 10px 0 0 !important;
+            margin-left: -1px;
+            margin-top: -7px;
+            object-position: center 0px;
+    }
+    .button {
+        width: 90% !important;
+        /* margin: auto; */
+        margin-bottom: 0;
+        margin-left: 1px;
+        margin-top: -10px !important;
+
+    }
+    .one  {
+        font-size: 18px;
+    }
+    .two {
+        font-size: 11px;
     }
 }
 @media (max-width : 455px) {
+    /* body {
+        height: calc(100vh - 6px);
+    }
+    .card {
+        margin-top: 6px;
+    } */
+
     .card .img img {
         margin-left: -1px;
         margin-top: 0 !important;
     }
     .card h1 {
-        font-size: 18px !important;
+        font-size: 17px !important;
     }
     .card p {
         font-size: 9px !important;
+    }
+}
+
+@media (max-width : 388px) {
+    body {
+        height: calc(100vh - 3px);
+    }
+
+    .card {
+        margin-top: 3px;
+    }
+    .card h1 {
+        font-size: 16px !important;
+    }
+
+    .card p {
+        font-size: 8px !important;
+    }
+}
+
+@media (max-width : 360px) {
+    body {
+        height: calc(100vh);
+    }
+
+    .card {
+        margin-top: 0;
+    }
+    .card h1 {
+        font-size: 14px !important;
+    }
+
+    .one {
+        font-size: 14px;
     }
 }
