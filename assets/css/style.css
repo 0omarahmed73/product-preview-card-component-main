@@ -10,7 +10,6 @@
 
 html {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 img {
@@ -19,22 +18,23 @@ img {
 }
 /* Parent Main Section */
 
-.parent {
+body {
     height: 100vh;
     background-color: #F2E9E4;
+    position: relative;
 }
 
-.parent .container-fluid {
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.img img {
+    width: 240;
     height: 100%;
-}
-
-.container-fluid .card {
-    /* width: 600px;
-    height: 400px; */
-}
-.parent .container-fluid .img img {
-    /* width: 270px; */
-    /* height: 100%; */
     border-radius: 10px 0 0 10px;
 }
 
@@ -47,7 +47,7 @@ img {
     color: #666875;
     opacity: 0.7;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .card p:nth-child(1) {
@@ -58,10 +58,14 @@ img {
     
 }
 
+.texts {
+    /* margin-block: 25px; */
+}
+
 .card h1 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -69,7 +73,7 @@ img {
     font-family: 'Fraunces', serif;
     color: hsl(158, 36%, 37%);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .two {
@@ -77,7 +81,7 @@ img {
     font-weight: 600;
     color: #666875;
     opacity: 0.7;
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
@@ -110,9 +114,14 @@ img {
 .structure {
     /* border: 1px solid; */
 }
-/* Media Queries */
 
-@media (max-width : 1201px) {
+@media (min-width : 1200px) {
+    .img img {
+        width: 230px;
+    }
+}
+
+@media (max-width : 1051px) {
     .texts h1 {
         font-size: 30px !important;
     }
@@ -127,14 +136,21 @@ img {
     .card p {
         font-size: 12px;
     }
+    .img img {
+        width: 250px;}
+        .button {
+            margin-bottom: 20px;    
+
+        }
 }
 
 @media (max-width : 768px) {
+
     .card .img img {
         width: 100.5% !important;
-        height: 147px !important;
+    height: 189px !important;
         object-fit: cover;
-        object-position: center -112px;
+        object-position: center -45px;
         border-radius: 10px 10px 0 0 !important;
         margin-left: -1px;
         margin-top: -7px;
@@ -142,16 +158,16 @@ img {
     .card h1 {
         font-family: 'Fraunces', serif;
         font-weight: 700;
-        font-size: 25px !important;
+        /* font-size: 25px !important; */
     
     }
     .card p {
-        font-size: 10px;
+        /* font-size: 10px; */
     }
     .button {
         width: 100% !important; 
         margin-left: -10px;   
-        margin-bottom: 10px;    
+        margin-bottom: 20px;    
         margin-top: 0 !important;
     }
     .sale {
@@ -166,13 +182,13 @@ img {
     }
 }
 
-@media (max-width : 570px) {
+@media (max-width : 660px) {
     .card h1 {
         font-size: 22px !important;
     
     }
     .card .img img {
-        object-position: center -57px;
+        object-position: center 0px;
     }
 }
 @media (max-width : 455px) {
